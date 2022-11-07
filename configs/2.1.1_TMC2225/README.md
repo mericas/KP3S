@@ -8,8 +8,10 @@
   4. Includes my PID settings.  Suggest you do a PID calibration right away
   5. TMC2225 are in UART mode
 
-To enable UART mode on the TMC2225 you will have to add a jumper wire from each driver to a header on the motherboard. This sounds scary but if you have basic soldering skills it isn't too bad.
-If you don't know how to solder, you probably don't want to do this.  See the [schematic](https://github.com/le3tspeak/Marlin-2.0.X-MKS-Robin-Nano/blob/2ffa19960715aa0fd97bf5f8973691eb2fc0012c/docs/TMC2208SWSERIAL.png) for details but understand the KP3S has nothing in E1 so you don't need to wire that socket.
+To enable UART mode on the TMC2225 you will have to add a jumper wire from each driver to a header on the motherboard. This sounds scary but if you have basic soldering skills it isn't too bad.  
+If you don't know how to solder, you probably don't want to do this.  
+Makerbase has a good video on the this, see their [wiki](https://github.com/makerbase-mks/MKS-Robin-Nano-V1.X/wiki/TMC_UART_MODE)
+See the [schematic](https://github.com/le3tspeak/Marlin-2.0.X-MKS-Robin-Nano/blob/2ffa19960715aa0fd97bf5f8973691eb2fc0012c/docs/TMC2208SWSERIAL.png) for details but understand the KP3S has nothing in E1 so you don't need to wire that socket.
 The **pins_MKS_ROBIN_NANO_common.h** file should go in Marlin/pins/stm32f1/. 
 
 This configuration is for my board which came with TMC2225.  It should work with TMC2208 except the MICROSTEPS in Configuration_adv.h will probably need to be change from 32 to 16.  It might work for TMC2209/TMC2226 but I haven't tested it yet.
