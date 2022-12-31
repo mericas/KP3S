@@ -1,4 +1,4 @@
-# Configuration files for Marlin 2.1.1 on KP3S with TMC2225 drivers in UART mode
+# Configuration files for Marlin 2.1.2 on KP3S with TMC2225 drivers in UART mode
 - Initial 2.1.2 Configuration.  Minimal testing (but does work so far)
 - Based off of [Sample Configuration](https://github.com/MarlinFirmware/Configurations/blob/f52c85b0e3b241f8fabb4a902a4aa53775fdeb93/config/examples/Kingroon/KP3S/Configuration.h)
 - Includes changes from https://github.com/bdwilson/KP3S/tree/main/Marlin-2.0.9.3
